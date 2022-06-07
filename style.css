@@ -2,7 +2,7 @@
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 3fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
     "nav main sidebar"
     "footer content1 content1"
@@ -22,11 +22,13 @@ h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 nav{
+    grid-area: nav;
     text-align: center;
     border-style: solid;
     border-width: 1px;
 }
 main{
+    grid-area: main;
     text-align: center;
     border-style: solid;
     border-width: 1px;
@@ -36,37 +38,44 @@ img{
     width: 450px;
 }
 #sidebar{
+    grid-area: sidebar;
     text-align: center;
     border-style: solid;
     border-width: 1px;
 }
 footer{
+    grid-area: footer;
     text-align: center;
     border-style: solid;
     border-width: 1px;
 
 }
 #content1{
+    grid-area: content1;
     background-color: rgb(238, 249, 109);
     border-style: solid;
     border-width: 1px;
 }
 #content2{
+    grid-area: content2;
     background-color: rgb(15, 252, 220);
     border-style: solid;
     border-width: 1px;
 }
 #content3{
+    grid-area: content3;
     background-color: rgb(20, 144, 253);
     border-style: solid;
     border-width: 1px;
 }
 #content4{
+    grid-area: content4;
     background-color: rgb(53, 253, 199);
     border-style: solid;
     border-width: 1px;
 }
 #content5{
+    grid-area: content5;
     background-color: rgb(255, 19, 247);
     border-style: solid;
     border-width: 1px;
